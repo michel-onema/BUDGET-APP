@@ -1,0 +1,42 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionnaire de Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>$ Mon Budget</h1>
+
+        <div class="balance">
+            <h2>Solde:</h2>
+            <h2>id="balance">0 $</h2>
+        </div>
+        <form id="form">
+            <input type="text" id="text"
+    placeholder="Description (ex:transport)" required>
+           <input type="number" id="amount"
+    placeholder="Montant (+ revenu/ - dépense)"
+    required>
+               <button type="submit">Ajouter</button>
+        </form>
+        <h3>Filtrer par mois</h3>
+        <input type="month" id="monthFiltre">
+        <h3>Historique</h3>
+        <ul id="list"></ul>
+        <h3>Graphique des dépenses</h3>
+        <canvas id="mychart"></canvas>
+    <select  id="category">
+        <option value="salaire">salaire</option>
+        <option value="transport">Transport</option>
+        <option value="Nourriture">Nourriture</option>
+        <option value="Internet">Internet</option>
+        <option value="Autres">Autres</option>
+    </select>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chart
+        .js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+
+
+
+body{
+    font-family: Arial;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.container{
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0,0,0.2);
+}
+
+h1{
+    text-align: center;
+}
+
+.balance{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: px solid #ccc;
+}
+
+/* revenu = vert */
+.income{
+    border-right: 5px solid green;
+    background: #eaffea;
+
+}
+
+/*dépense = rouge */
+.expense{
+    border-right: 5px solid red;
+    background: #ffecec;
+
+}
+
+.delete-btn{
+    background: red;
+    color: white;
+    border: none;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
